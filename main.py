@@ -3,7 +3,7 @@ from trackpoint.models import Task
 from trackpoint.task_manager import TaskManager
 
 task_manager = TaskManager()
-task1 = Task("Изучить SQL", "high", "nothing", deadline = date(2026, 10, 20))
+task1 = Task("Изучить SQL", "high", "done", deadline = date(2026, 10, 20))
 task2 = Task("Создать README", "medium", "in_progress")
 
 task_manager.add_task(task1)
