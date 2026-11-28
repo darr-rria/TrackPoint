@@ -1,8 +1,9 @@
 from trackpoint.models import Task
 
 def test_init():
-    task = Task("Test Task", "This is a test task.", "2023-12-31")
+    task = Task("Test Task", "High", "todo", "This is a test task.", None)
     assert task.title == "Test Task"
+    assert task.priority == "High"
+    assert task.status == "todo"
     assert task.description == "This is a test task."
-    assert task.deadline == "2023-12-31"
-    assert task.status == "Pending"
+    assert task.deadline is None
